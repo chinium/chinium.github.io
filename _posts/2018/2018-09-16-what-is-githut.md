@@ -1,11 +1,13 @@
 ---
 layout: post
 title: What is GitHut?
-date: 2018-09-16 12:00
-tags: [githut, github]
+date: '2018-09-16 12:00'
+tags:
+  - githut
+  - github
 categories:
   - it
-published: false
+published: true
 ---
 ## GitHut
 - A Small place to discover languages in GitHub
@@ -18,4 +20,3 @@ published: false
 
 ### SAMPLE IMAGE
 ![githut.png]({{site.baseurl}}/_posts/2018/githut.png)
-
