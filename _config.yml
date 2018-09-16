@@ -49,6 +49,18 @@ markdown: kramdown
 kramdown:
     input: GFM
 
+# Collection
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:title/
+  docs:
+    output: true
+    permalink: /:collection/:categories/:title/
+  jpop:
+    output: true
+    permalink: /:collection/:categories/:title/
+
 # Default Attributes
 ## Docs: https://jekyllrb.com/docs/configuration/#front-matter-defaults
 defaults:

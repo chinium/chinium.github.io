@@ -1,0 +1,20 @@
+---
+title: JPOP
+---
+{% assign jpop = site.jpop %}
+  <div class="posts-list" id="jpop">
+  {% for post in jpop %}
+    {% if post.index == true %}
+      {% continue %}
+    {% endif %}
+    <article class="post-preview">
+      <a href="{{ post.url }}">
+        <h2 class="post-title">{{ post.title }}</h2>
+        {% if post.subtitle %}
+          <h3 class="post-subtitle">{{ post.subtitle }}</h3>
+        {% endif %}
+      </a>
+      {% include tags-ribbon.html post=post %}
+    </article>
+  {% endfor %}
+  </div>

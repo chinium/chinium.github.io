@@ -1,0 +1,18 @@
+---
+title: Mr.Children
+index: true
+---
+{% assign jpop = site.jpop |where: "categories", "mrchildren" |sort: "title" %}
+  <div class="posts-list" id="jpop">
+  {% for post in jpop %}
+    <article class="post-preview">
+      <a href="{{ post.url }}">
+        <h2 class="post-title">{{ post.title }}</h2>
+        {% if post.subtitle %}
+          <h3 class="post-subtitle">{{ post.subtitle }}</h3>
+        {% endif %}
+      </a>
+      {% include tags-ribbon.html post=post %}
+    </article>
+  {% endfor %}
+  </div>

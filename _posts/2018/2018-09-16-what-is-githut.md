@@ -1,4 +1,10 @@
 ---
+layout: post
+title: What is GitHut?
+date: 2018-09-16 12:00
+tags: [githut, github]
+categories:
+  - it
 published: false
 ---
 ## GitHut
