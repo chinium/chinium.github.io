@@ -19,4 +19,4 @@ published: true
 
 
 ### SAMPLE IMAGE
-![githut.png]({{site.baseurl}}/_posts/2018/githut.png)
+![githut.png]({{site.baseurl}}/assets/images/2018/githut.png)
