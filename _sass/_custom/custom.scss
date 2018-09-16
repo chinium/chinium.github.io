@@ -1,0 +1,11 @@
+// Custom styles.
+.div-center {
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    width: 36em;
+    margin-top: -15em; /*set to a negative number 1/2 of your height*/
+    margin-left: -18em; /*set to a negative number 1/2 of your width*/
+    border: 1px solid #ccc;
+    background-color: #f3f3f3;
+}

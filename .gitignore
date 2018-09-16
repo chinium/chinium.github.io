@@ -1,0 +1,19 @@
+_site/*
+_theme_packages/*
+
+Thumbs.db
+ehthumbs.db
+.DS_Store
+
+!.gitkeep
+
+.rbenv-version
+.rvmrc
+/vendor
+
+# project
+.sass-cache
+.vagrant
+_excludes
+Gemfile.lock
+
