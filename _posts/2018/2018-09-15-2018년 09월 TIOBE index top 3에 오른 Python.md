@@ -25,5 +25,4 @@ title: 2018년 09월 TIOBE index top 3에 오른 Python
   1. Objective-C
 
 
-
 개인적으로 Visual Basic .NET의 약진도 놀라운 점 중 하나.
