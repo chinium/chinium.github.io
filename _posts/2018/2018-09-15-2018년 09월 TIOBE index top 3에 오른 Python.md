@@ -11,3 +11,19 @@ title: 2018년 09월 TIOBE index top 3에 오른 Python
 - easy to install
 - easy to deploy
 
+
+* Top 10 (from https://www.tiobe.com/tiobe-index/)
+1. Java
+1. C
+1. Python
+1. C++
+1. Visual Basic .NET
+1. C#
+1. PHP
+1. Javascript
+1. SQL
+1. Objective-C
+
+
+
+개인적으로 Visual Basic .NET의 약진도 놀라운 점 중 하나.
