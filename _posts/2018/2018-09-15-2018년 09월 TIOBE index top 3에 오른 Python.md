@@ -13,16 +13,16 @@ title: 2018년 09월 TIOBE index top 3에 오른 Python
 
 
 * Top 10 (from https://www.tiobe.com/tiobe-index/)
-1. Java
-1. C
-1. Python
-1. C++
-1. Visual Basic .NET
-1. C#
-1. PHP
-1. Javascript
-1. SQL
-1. Objective-C
+  1. Java
+  1. C
+  1. Python
+  1. C++
+  1. Visual Basic .NET
+  1. C#
+  1. PHP
+  1. Javascript
+  1. SQL
+  1. Objective-C
 
 
 
