@@ -8,12 +8,14 @@ tags:
   - tls
 ---
 
+여기서는 ovbdb-server에서 TLSv1.2만 접속 허용하도록 설정하는 방법을 알아보도록 한다.
+
 
 ### ovsdb-server (Port 6641, 6642)
 
 **- Port 6641 (OVN_Northbound)**
 
-```bash
+{% highlight bash %}
 # SELECT
 [root@my-dev ~]# ovsdb-client transact unix:/var/run/openvswitch/ovnnb_db.sock '["OVN_Northbound", {"op":"select", "table":"SSL", "where":[]}]' | python -m json.tool
 [
@@ -52,12 +54,12 @@ tags:
         ]
     }
 ]
-```
+{% endhighlight %}
 
 
 **- Port 6642 (OVN_Southbound)**
 
-```bash
+{% highlight bash %}
 # SELECT
 [root@my-dev ~]# ovsdb-client transact unix:/var/run/openvswitch/ovnsb_db.sock '["OVN_Southbound", {"op":"select", "table":"SSL", "where": []}]' | python -m json.tool
 [
@@ -97,12 +99,12 @@ tags:
         ]
     }
 ]
-```
+{% endhighlight %}
 
 
-- Ref.
-	- [https://relaxdiego.com/2014/09/ovsdb.html](https://relaxdiego.com/2014/09/ovsdb.html){:target="_blank"}
-	- [https://tools.ietf.org/id/draft-pfaff-ovsdb-proto-02.html#rfc.section.5.2.3](https://tools.ietf.org/id/draft-pfaff-ovsdb-proto-02.html#rfc.section.5.2.3){:target="_blank"}
-	- [https://bugzilla.redhat.com/show_bug.cgi?id=1459441](https://bugzilla.redhat.com/show_bug.cgi?id=1459441){:target="_blank"}
-	- [http://docs.openvswitch.org/en/latest/ref/ovsdb-server.7/](http://docs.openvswitch.org/en/latest/ref/ovsdb-server.7/){:target="_blank"}
+### Ref.
+- [https://relaxdiego.com/2014/09/ovsdb.html](https://relaxdiego.com/2014/09/ovsdb.html){:target="_blank"}
+- [https://tools.ietf.org/id/draft-pfaff-ovsdb-proto-02.html#rfc.section.5.2.3](https://tools.ietf.org/id/draft-pfaff-ovsdb-proto-02.html#rfc.section.5.2.3){:target="_blank"}
+- [https://bugzilla.redhat.com/show_bug.cgi?id=1459441](https://bugzilla.redhat.com/show_bug.cgi?id=1459441){:target="_blank"}
+- [http://docs.openvswitch.org/en/latest/ref/ovsdb-server.7/](http://docs.openvswitch.org/en/latest/ref/ovsdb-server.7/){:target="_blank"}
 

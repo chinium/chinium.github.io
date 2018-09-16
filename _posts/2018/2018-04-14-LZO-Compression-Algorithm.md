@@ -6,7 +6,7 @@ tags: [Compression, Algorithm, LZO]
 ---
 
 
-### LZO (Lempel-Ziv-Oberhumer) ###
+## LZO (Lempel-Ziv-Oberhumer)
 - Markus Oberhumer가 1994년에 ANSI C로 개발한 무손실 데이터 압축 알고리즘
 - 압축 효율, 압축 해제 속도에 초점을 둔 알고리즘 (zlib, bzip에 비해 거의 5배 이상 빠름)
 - 리눅스 커널, 안드로이드 모바일 기기, 임베디드 디바이스 및 OpenVPN, MPlayer2, Libav, FFmpeg 같은 오픈소스 라이브러리 등에 널리 사용되고 있음
@@ -20,7 +20,7 @@ tags: [Compression, Algorithm, LZO]
     - gzip에 비해 높은 압축/압축 해제 속도가 특징
 
 
-##### Related Links #####
+### Related Links
 - <http://www.oberhumer.com/opensource/lzo/>{:target="_blank"}
 - <https://en.wikipedia.org/wiki/Lempel–Ziv–Oberhumer>{:target="_blank"}
 - [zlib library](http://www.zlib.net/){:target="_blank"}
@@ -29,8 +29,8 @@ tags: [Compression, Algorithm, LZO]
 - [xz file compressor](https://tukaani.org/xz/){:target="_blank"}
 
 
-##### Example - miniLZO #####
-```bash
+### Example - miniLZO
+{% highlight bash %}
 [root@my-dev temp]# wget http://www.oberhumer.com/opensource/lzo/download/minilzo-2.10.tar.gz -O- | tar xvfpz -
 --2018-04-14 06:38:52--  http://www.oberhumer.com/opensource/lzo/download/minilzo-2.10.tar.gz
 Resolving www.oberhumer.com (www.oberhumer.com)... 193.170.194.40
@@ -104,4 +104,4 @@ compressed 131072 bytes into 593 bytes
 decompressed 593 bytes back into 131072 bytes
 
 miniLZO simple compression test passed.
-```
+{% endhighlight %}
