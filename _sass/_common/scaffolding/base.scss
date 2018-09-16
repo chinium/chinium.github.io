@@ -81,9 +81,11 @@ hr {
 }
 
 blockquote {
-  padding: 0 15px;
   color: $grey-dim;
   border-left: 4px solid $gray-lighter;
+  background-color: #F6F6F6;
+  padding: 25px 15px 5px 15px;
+  margin: 30px 20px;
 
   cite::before {
     content: "-";
