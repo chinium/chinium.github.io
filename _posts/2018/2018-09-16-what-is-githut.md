@@ -5,8 +5,7 @@ date: '2018-09-16 12:00'
 tags:
   - githut
   - github
-categories:
-  - IT
+categories: IT
 published: true
 ---
 ## GitHut

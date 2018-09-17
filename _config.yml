@@ -32,7 +32,7 @@ archive:
   #paginate_path: "/page:num/"
 
 # Handling Reading
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "Gemfile", "Gemfile.lock", "README_en.md", "vendor", "_exclude/*"]
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "Gemfile", "Gemfile.lock", "README_en.md", "vendor", "CNAME", "*.draft"]
 
 # Separator
 #excerpt_separator: <!-- more -->
@@ -57,20 +57,28 @@ collections:
   docs:
     output: true
     permalink: /:collection/:categories/:title/
-  jpop:
+  word:
     output: true
-    permalink: /:collection/:categories/:title/
+    permalink: /:collection/:title/
 
 # Default Attributes
 ## Docs: https://jekyllrb.com/docs/configuration/#front-matter-defaults
 defaults:
   -
     scope:
-      path: ""
+      path: "_posts"
       type: "posts"
     values:
       layout: "post"
       permalink: /:year/:month/:title/
+      comments: true  # add comments to all blog posts
+  -
+    scope:
+      path: "_posts/JPOP"
+      type: "posts"
+    values:
+      layout: "post"
+      permalink: /:categories/:title/
       comments: true  # add comments to all blog posts
   -
     scope:
@@ -194,7 +202,8 @@ font:
   global:
     # external: true will load this font family from host.
     external: true
-    family: Lato
+    family: '"Open Sans", sans-serif'
+  #  family: Lato
 
   # Font settings for Headlines (h1, h2, h3, h4, h5, h6)
   # Fallback to `global` font settings.
@@ -325,7 +334,7 @@ excerpt_description: true
 # Please use <!-- more --> in the post to control excerpt accurately.
 auto_excerpt:
   enable: false
-  length: 150
+  length: 200
 
 # Post meta display settings
 post_meta:
@@ -400,7 +409,7 @@ han: false
 
 # Disqus
 disqus:
-  enable: true
+  enable: false
   shortname: "DevOTG"
   count: true
   # hide comments (visitors need to click to load the comments)

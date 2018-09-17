@@ -1,18 +1,12 @@
 ---
 layout: page
 title: About
-permalink: /about/
+subtitle: 
+published: true
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+I'm a product architect and full-stack developer living in Seoul, Korea.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+Recently I focus on what it takes to make simple and reliable web applications, how to combine various devops technologies.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+I love many simple and creative open source softwares that change the way we live and believe that they will make more people do much more useful things and change this world flourishing.

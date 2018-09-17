@@ -3,8 +3,7 @@ layout: post
 title: Install PIP on CentOS 6
 date: 2018-08-30 12:00
 tags: [pip, centos6]
-categories:
-  - python
+categories: Python
 ---
 ## PIP
 - A tool for installing and managing Python packages  

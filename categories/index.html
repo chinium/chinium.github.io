@@ -1,4 +1,30 @@
 ---
 layout: page
-type: categories
+title: Categories
 ---
+
+{% assign categories = site.categories |sort %}
+
+<div class="cloud">
+{% for category in categories %}
+  {% assign cat_id = category |first %}
+  {% assign cat_size = category |last |size %}
+
+  {% for cat in site.data['categories'] %}
+    {% if cat.id == cat_id %}
+      {% assign cat_name = cat.name |default: cat_id %}
+      {% assign cat_desc = cat.description |default: "(no desc)" %}
+      {% break %}
+    {% else %}
+      {% assign cat_name = cat_id %}
+      {% assign cat_desc = "(no desc2)" %}
+    {% endif %}
+  {% endfor %}
+
+  <li>
+    <a class="category-name" href="/categories/{{ cat_id }}/" title="Postings on {{ cat_id }}">{{ cat_name }}</a>
+    <span class="category-meta">{{ cat_desc }}</span>
+    <span class="category-count">» {{ cat_size }}</span>
+  </li>
+{% endfor %}
+</div>
