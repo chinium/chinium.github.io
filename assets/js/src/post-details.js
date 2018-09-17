@@ -82,7 +82,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   var html = $('html');
-  var TAB_ANIMATE_DURATION = 200;
+  var TAB_ANIMATE_DURATION = 10;
   var hasVelocity = $.isFunction(html.velocity);
 
   $('.sidebar-nav li').on('click', function () {
@@ -130,7 +130,7 @@ $(document).ready(function () {
       }) :
       $('html, body').stop().animate({
         scrollTop: offset
-      }, 500);
+      }, 200);
   });
 
   // Expand sidebar on post detail page by default, when post has a toc.

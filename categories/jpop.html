@@ -23,7 +23,7 @@ title: "@JPOP"
         {% else %}
           {% assign tagname = tag %}
         {% endif %}
-        <a class="tag-item" href="/tags/{{ tag |slugify }}/">{{ tagname }}</a>
+        <a class="tag-item" href="/tag/#/{{ tagname }}">{{ tagname }}</a>
       {% endfor %}
       </div>
     </li>
