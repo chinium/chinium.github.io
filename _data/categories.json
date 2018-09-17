@@ -3,8 +3,8 @@
     "description": "JPOP 관련" },
   { "id": "mr.children", "name": "Mr.Children",
     "description": "Mr.Children 관련" },
-  { "id": "IT", "name": "IT",
+  { "id": "it", "name": "IT",
     "description": "IT 관련" },
-  { "id": "Python", "name": "Python",
+  { "id": "python", "name": "Python",
     "description": "Python 관련" },
 ]
