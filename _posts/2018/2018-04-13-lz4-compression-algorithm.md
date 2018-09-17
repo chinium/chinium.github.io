@@ -1,13 +1,13 @@
 ---
 layout: post
-title: 'Python - Raw Socket Programming #1'
+title: LZ4 Compression Algorithm
 date: 2018-04-13 10:00
 tags: [Compression, Algorithm, LZ4]
 published: true
 ---
 
 
-### LZ4 ###
+### LZ4
 - compression, decompression speed에 초점을 둔 무손실 데이터 압축 알고리즘 (lossless data compression algorithm)
     - compression speed at 400 MB/s per core (0.16 Bytes/cycle)
     - decompression speed in multiple GB/s per core (0.71 Bytes/cycle)
