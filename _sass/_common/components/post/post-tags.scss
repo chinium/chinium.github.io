@@ -1,10 +1,18 @@
 .posts-expand .post-tags {
-  margin-top: 40px;
-  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 40px;
+  clear: both;
+  text-align: right;
 
   a {
     display: inline-block;
-    margin-right: 10px;
+    margin-left: 10px;
     font-size: 13px;
   }
 }
+
+.posts-expand .post-tags:before {
+  content: "\F02C";
+  font-family: FontAwesome;
+}
+

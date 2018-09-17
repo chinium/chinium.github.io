@@ -1,18 +1,32 @@
 ---
+layout: page
 title: Mr.Children
 index: true
 ---
 {% assign jpop = site.jpop |where: "categories", "mrchildren" |sort: "title" %}
-  <div class="posts-list" id="jpop">
+<div class="category-description"><p>JPOP > Mr.Children</p></div>
+<div class="wall-panel" id="blog-archives">
+  <ul class="posts nodot">
   {% for post in jpop %}
-    <article class="post-preview">
-      <a href="{{ post.url }}">
-        <h2 class="post-title">{{ post.title }}</h2>
-        {% if post.subtitle %}
-          <h3 class="post-subtitle">{{ post.subtitle }}</h3>
+    <li><a href="{{ post.url }}">{{ post.title }}</a>
+      <span class="post-meta pull-right">
+        <i class="fa fa-calendar"></i> {{ post.date |date: '%F' }}
+      </span>
+      <div class="post-tags text-muted">
+      {% for tag in post.tags %}
+        {% if site.data.tags[tag] %}
+          {% if site.data.tags[tag].ko %}
+            {% assign tagname = site.data.tags[tag].ko %}
+          {% else %}
+            {% assign tagname = site.data.tags[tag].en %}
+          {% endif %}
+        {% else %}
+          {% assign tagname = tag %}
         {% endif %}
-      </a>
-      {% include tags-ribbon.html post=post %}
-    </article>
+        <a class="tag-item" href="/tags/{{ tag |slugify }}/">{{ tagname }}</a>
+      {% endfor %}
+      </div>
+    </li>
   {% endfor %}
-  </div>
+  </ul>
+</div>
