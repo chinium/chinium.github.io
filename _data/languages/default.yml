@@ -3,6 +3,7 @@ title:
   category: Category
   tag: Tag
   schedule: Schedule
+  posts: Posts
   archives: Archives
   categories: Categories
   tags: Tags
@@ -12,6 +13,7 @@ author: Author
 
 menu:
   home: Home
+  posts: Posts
   archives: Archives
   categories: Categories
   tags: Tags
