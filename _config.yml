@@ -409,7 +409,7 @@ han: false
 
 # Disqus
 disqus:
-  enable: false
+  enable: true
   shortname: "DevOTG"
   count: true
   # hide comments (visitors need to click to load the comments)
