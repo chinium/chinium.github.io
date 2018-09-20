@@ -23,7 +23,7 @@ title: Categories
   {% endfor %}
 
   <li>
-    <a class="category-name" href="/categories/{{ cat_id |downcase }}/" title="Postings on {{ cat_id }}">{{ cat_name }}</a>
+    <a class="category-name" href="/categories/{{ cat_name }}/" title="Postings on {{ cat_id }}">{{ cat_name }}</a>
     <span class="category-meta">{{ cat_desc }}</span>
     <span class="category-count">» {{ cat_size }}</span>
   </li>
