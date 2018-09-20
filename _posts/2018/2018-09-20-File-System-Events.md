@@ -49,5 +49,5 @@ Options:
 추가로 Jekyll에서 사용되는 FSEvents Ruby Gem과 내부적으로 사용되는 C언어로 작성된 툴인ㄴ fsevent_watch로 살펴보기 바란다.
 
 - [File System Events Programming Guide](https://developer.apple.com/library/archive/documentation/Darwin/Conceptual/FSEvents_ProgGuide/Introduction/Introduction.html)
-- https://github.com/thibaudgg/rb-fsevent
-- https://github.com/proger/fsevent_watch
+- [rb-fsevent](https://github.com/thibaudgg/rb-fsevent)
+- [fsevent_watch](https://github.com/proger/fsevent_watch)
