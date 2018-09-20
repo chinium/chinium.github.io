@@ -47,7 +47,7 @@ Options:
 파일 시스템 이벤트 API는 파일시스템 변화에 대한 세밀한 통지를 받고자 한다거나 특정 파일의 변화를 알아내기 위한 용도보다는 대규모 파일 트리에서의 변화를 수동적으로 모니터링하는 데 적합하게 디자인되었는데, 이에 대한 가장 확실한 예는 백업 소프트웨어다.
 
 보다 기술적인 내용은 아래 애플 개발자 문서를 참조해보길 바라며,
-추가로 Jekyll에서 사용되는 FSEvents Ruby Gem과 내부적으로 사용되는 C언어로 작성된 툴인ㄴ fsevent_watch로 살펴보기 바란다.
+추가로 Jekyll에서 사용되는 FSEvents Ruby Gem과 내부적으로 사용되는 C언어로 작성된 툴인 fsevent_watch로 살펴보기 바란다.
 
 - [File System Events Programming Guide](https://developer.apple.com/library/archive/documentation/Darwin/Conceptual/FSEvents_ProgGuide/Introduction/Introduction.html)
 - [rb-fsevent](https://github.com/thibaudgg/rb-fsevent)
