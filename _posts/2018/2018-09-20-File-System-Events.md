@@ -2,7 +2,7 @@
 published: true
 title: Jekyll과 File System Events
 slug: jekyll-and-file-system-events
-date: {}
+date: '2018-09-20 23:49'
 tags:
   - Jekyll
   - File System Events
