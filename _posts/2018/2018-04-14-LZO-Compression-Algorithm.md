@@ -1,8 +1,13 @@
 ---
 layout: post
 title: LZO Compression Algorithm
-date: 2018-04-14 10:00
-tags: [Compression, Algorithm, LZO]
+date: '2018-04-14 10:00'
+tags:
+  - Compression
+  - Algorithm
+  - LZO
+published: true
+categories: IT
 ---
 
 
