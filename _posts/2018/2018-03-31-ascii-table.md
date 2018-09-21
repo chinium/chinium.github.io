@@ -1,9 +1,11 @@
 ---
 layout: post
 title: ASCII Table
-date: 2018-03-31 03:09
+date: '2018-03-31 03:09'
 tags:
   - ASCII
+published: true
+categories: IT
 ---
 
 
