@@ -1,8 +1,13 @@
 ---
 layout: post
 title: Run Length Encoding
-date: 2018-04-13 12:00
-tags: [Compression, Encoding, Algorithm]
+date: '2018-04-13 12:00'
+tags:
+  - Compression
+  - Encoding
+  - Algorithm
+published: true
+categories: IT
 ---
 
 
@@ -22,4 +27,4 @@ tags: [Compression, Encoding, Algorithm]
     - ABCDDDDDDDDEEEEEEEEE ( 19 byte)  
       => ABC*8D*9E ( 9 byte)  
       압축률 : 19 byte / 9 byte = 2.11  
-      3 byte보다 긴 run 일 경우 압축률이 높아짐  
+      3 byte보다 긴 run 일 경우 압축률이 높아짐
