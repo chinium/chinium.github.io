@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Static Site Generator
-date: 2018-04-01 04:45
+date: '2018-04-01 04:45'
 tags:
   - pelican
   - docsify
@@ -9,6 +9,8 @@ tags:
   - jekyll
   - hyde
   - docpad
+published: true
+categories: IT
 ---
 
 
@@ -43,5 +45,4 @@ tags:
   
 **DocPad**  
 - DocPad is a dynamic static-site generator.  
-- <https://docpad.org/>{:target="_blank"}  
-
+- <https://docpad.org/>{:target="_blank"}
