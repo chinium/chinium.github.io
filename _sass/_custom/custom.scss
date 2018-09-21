@@ -14,3 +14,36 @@
   font-size: 18px;
   font-weight: bold;
 }
+
+.gist .markdown-body .highlight pre, .gist .markdown-body pre {
+  font-size: 14px!important;
+  background-color: #FAFAFA!important;
+}
+
+.gist .markdown-body .highlight pre, .gist .markdown-body pre[lang=jpop] {
+  font-size: 18px!important;
+  background-color: #FBFBFB!important;
+}
+
+.gist .blob-num {
+  font-size: 14px!important;
+  line-height: 21px!important;
+}
+
+.gist .blob-code {
+  line-height: 21px!important;
+}
+
+.gist .blob-code-inner {
+  font-size: 14px!important;
+}
+
+.gist .gist-meta {
+  padding: 6px 10px!important;
+  font: 12px Mono,Menlo,Helvetica,Arial,sans-serif!important;
+  background-color: #FFF!important;
+}
+
+table > tbody > tr:nth-of-type(odd) {
+  background-color: #FBFBFB!important;
+}
