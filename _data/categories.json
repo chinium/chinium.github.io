@@ -7,4 +7,8 @@
     "description": "IT 관련" },
   { "id": "python", "name": "Python",
     "description": "Python 관련" },
+  { "id": "vbscript", "name": "VBScript",
+    "description": "VBScript 관련" },
+  { "id": "nosql", "name": "NoSQL",
+    "description": "NoSQL 관련 (redis, mongodb)" },
 ]

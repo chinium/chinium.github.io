@@ -1,10 +1,9 @@
 ---
 layout: post
-title: 'Python - Raw Socket Programming #1'
+title: Python - Raw Socket Programming #1
 date: 2014-08-25 12:00
-tags:
-  - python
-  - socket
+tags: [Python, Socket]
+categories: [Python]
 published: true
 ---
 

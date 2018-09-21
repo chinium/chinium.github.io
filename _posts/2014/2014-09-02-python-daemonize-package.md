@@ -2,9 +2,8 @@
 layout: post
 title: Python - daemonize package
 date: 2014-09-02 12:00
-tags:
-  - Python
-  - daemonize
+tags: [Python, daemonize]
+categories: [Python]
 ---
 
 
