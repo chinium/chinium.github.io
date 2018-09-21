@@ -1,9 +1,11 @@
 ---
 layout: post
 title: vagrant box prune / remove
-date: 2018-04-10 12:00
+date: '2018-04-10 12:00'
 tags:
   - vagrant
+published: true
+categories: IT
 ---
 
 
@@ -96,4 +98,3 @@ total 0
 drwxr-xr-x  2 chinium  staff   64 Apr 10 12:13 .
 drwxr-xr-x  5 chinium  staff  160 Dec  6  2016 ..
 ```
-
