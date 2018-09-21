@@ -1,10 +1,12 @@
 ---
 layout: post
 title: Docker 정보 모음
-date: 2018-04-08 10:00
+date: '2018-04-08 10:00'
 tags:
   - docker
 slug: what-is_docker
+published: true
+categories: IT
 ---
 
 > Docker(도커)는 세계를 선도하는 소프트웨어 컨테이너화 플랫폼이다.
@@ -16,4 +18,3 @@ slug: what-is_docker
 
 ** Docker 한글 문서 / 영상 모음집 **  
 - <http://documents.docker.co.kr>{:target="_blank"}
-
