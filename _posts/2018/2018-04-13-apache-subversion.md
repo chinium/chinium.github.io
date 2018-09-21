@@ -1,23 +1,25 @@
 ---
 layout: post
 title: Apache™ Subversion®
-date: 2018-04-13 10:00
+date: '2018-04-13 10:00'
 tags:
   - subversion
   - svn
+published: true
+categories: IT
 ---
 
 
-### Apache™ Subversion® ###
+## Apache™ Subversion®
 - Open source version control system
 - Full-featured version control system originally designed to be a better CVS
 
 
-### Vision ###
+### Vision
 Subversion exists to be universally recognized and adopted as an open-source, centralized version control system characterized by its reliability as a safe haven for valuable data; the simplicity of its model and usage; and its ability to support the needs of a wide variety of users and projects, from individuals to large-scale enterprise operations.
 
 
-### Features ###
+### Features
 - Most CVS features.
 CVS is a relatively basic version control system. For the most part, Subversion has matched or exceeded CVS's feature set where those features continue to apply in Subversion's particular design.
 
