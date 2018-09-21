@@ -1,8 +1,13 @@
 ---
 layout: post
 title: figlet - ASCII Text Banner
-date: 2018-04-08 03:00
-tags: [Linux, figlet, ASCII]
+date: '2018-04-08 03:00'
+tags:
+  - Linux
+  - figlet
+  - ASCII
+published: true
+categories: IT
 ---
 
 
@@ -49,4 +54,3 @@ _|  _| \___| _| _| \___/       \_/\_/  \___/  _|    _| \__,_|
 
 
 ```
-
