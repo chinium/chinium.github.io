@@ -1,9 +1,11 @@
 ---
 layout: post
 title: Parts of an regular web url
-date: 2018-05-12 10:00
+date: '2018-05-12 10:00'
 tags:
   - url
+published: true
+categories: IT
 ---
 
 
@@ -24,4 +26,3 @@ protocol         password |   |         |       |   port                  |     
                           |   3rd-level-domain
                           4th-level-domain
 ```
-
