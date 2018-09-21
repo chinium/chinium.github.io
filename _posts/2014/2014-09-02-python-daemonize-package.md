@@ -1,12 +1,14 @@
 ---
 layout: post
 title: Python - daemonize package
+date: 2014-09-02 12:00
 tags:
-  - python
+  - Python
+  - daemonize
 ---
 
 
-### Installation ###
+## Installation
 ```bash
 (dev)[root@localhost python]# pip install daemonize
 'Downloading/unpacking daemonize
@@ -20,7 +22,7 @@ Successfully installed daemonize
 Cleaning up...
 ```
 
-### Help ###
+## Help
 ```bash
 (dev)[root@localhost daemonize]# python
 Python 2.7.2 (default, Jul  1 2011, 21:32:15)
@@ -58,39 +60,11 @@ class Daemonize(__builtin__.object)
 ...
 ```
 
-### Example ###
-```bash
-# daemonize_ex1.py
-
-import time
-import logging
-import daemonize
-
-pidfile = "./test.pid"
-logfile = "./test.log"
-logger = logging.getLogger(__name__)
-logger.setLevel(logging.DEBUG)
-logger.propagate = False
-fh = logging.FileHandler(logfile, "w")
-fh.setLevel(logging.DEBUG)
-logger.addHandler(fh)
-keep_fds = [fh.stream.fileno()]
-
-def proc_main():
-    mylog("proc start")
-    while True:
-	    time.sleep(3)
-	    mylog("proc loop")
-
-def mylog(msg):
-    logger.debug("%s %s" % (time.strftime("%Y-%m-%d %H:%M:%S%z"), msg))
-
-daemon = daemonize.Daemonize(app="test_app", pid=pidfile, action=proc_main, keep_fds=keep_fds)
-daemon.start()
-```
+## Example
+{% gist 45431c3c153d8422415ef4df0c2e6cb6 %}
 
 
-### Run ###
+## Run
 ```bash
 (dev)[root@localhost daemonize]# python daemonize_ex1.py
 (dev)[root@localhost daemonize]# ps -ef | grep daemonize
