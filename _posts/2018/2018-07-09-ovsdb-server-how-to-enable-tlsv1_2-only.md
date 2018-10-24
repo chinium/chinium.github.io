@@ -6,103 +6,19 @@ tags:
   - oVirt
   - ovsdb-server
   - tls
+categories:
+  - IT
 ---
 
 여기서는 ovbdb-server에서 TLSv1.2만 접속 허용하도록 설정하는 방법을 알아보도록 한다.
 
 
-### ovsdb-server (Port 6641, 6642)
+## ovsdb-server (Port 6641, 6642)
 
-**- Port 6641 (OVN_Northbound)**
-
-{% highlight bash %}
-# SELECT
-[root@my-dev ~]# ovsdb-client transact unix:/var/run/openvswitch/ovnnb_db.sock '["OVN_Northbound", {"op":"select", "table":"SSL", "where":[]}]' | python -m json.tool
-[
-    {
-        "rows": [
-            {
-                "_uuid": [
-                    "uuid",
-                    "07061153-385c-4f1c-b983-eede6a532c49"
-                ],
-...snip...
-                "ssl_ciphers": "",
-                "ssl_protocols": ""
-            }
-        ]
-    }
-]
-
-# UPDATE
-[root@my-dev ~]# ovsdb-client transact unix:/var/run/openvswitch/ovnnb_db.sock '["OVN_Northbound", {"op":"update", "table":"SSL", "where": [["_uuid","==",["uuid","07061153-385c-4f1c-b983-eede6a532c49"]]], "row": {"ssl_protocols": "TLSv1.2"}}]' | python -m json.tool
-[
-    {
-        "count": 1
-    }
-]
-
-[root@my-dev ~]# ovsdb-client transact unix:/var/run/openvswitch/ovnnb_db.sock '["OVN_Northbound", {"op":"select", "table":"SSL", "where":[]}]' | python -m json.tool
-[
-    {
-        "rows": [
-            {
-...snip...
-                "ssl_ciphers": "",
-                "ssl_protocols": "TLSv1.2"
-            }
-        ]
-    }
-]
-{% endhighlight %}
+{% gist 0d29fe19adc72f43032a099b37809789 %}
 
 
-**- Port 6642 (OVN_Southbound)**
-
-{% highlight bash %}
-# SELECT
-[root@my-dev ~]# ovsdb-client transact unix:/var/run/openvswitch/ovnsb_db.sock '["OVN_Southbound", {"op":"select", "table":"SSL", "where": []}]' | python -m json.tool
-[
-    {
-        "rows": [
-            {
-                "_uuid": [
-                    "uuid",
-                    "b375d965-3d62-4536-af48-143ead738612"
-                ],
-...snip...
-                "ssl_ciphers": "",
-                "ssl_protocols": ""
-            }
-        ]
-    }
-]
-
-# UPDATE
-[root@my-dev ~]# ovsdb-client transact unix:/var/run/openvswitch/ovnsb_db.sock '["OVN_Southbound", {"op":"update", "table":"SSL", "where":[], "row":{"ssl_protocols": "TLSv1.2"}}]' | python -m json.tool
-[
-    {
-        "count": 1
-    }
-]
-
-# SELECT
-[root@my-dev ~]# ovsdb-client transact unix:/var/run/openvswitch/ovnsb_db.sock '["OVN_Southbound", {"op":"select", "table":"SSL", "where": []}]' | python -m json.tool
-[
-    {
-        "rows": [
-            {
-...snip...
-                "ssl_ciphers": "",
-                "ssl_protocols": "TLSv1.2"
-            }
-        ]
-    }
-]
-{% endhighlight %}
-
-
-### Ref.
+## Ref.
 - [https://relaxdiego.com/2014/09/ovsdb.html](https://relaxdiego.com/2014/09/ovsdb.html){:target="_blank"}
 - [https://tools.ietf.org/id/draft-pfaff-ovsdb-proto-02.html#rfc.section.5.2.3](https://tools.ietf.org/id/draft-pfaff-ovsdb-proto-02.html#rfc.section.5.2.3){:target="_blank"}
 - [https://bugzilla.redhat.com/show_bug.cgi?id=1459441](https://bugzilla.redhat.com/show_bug.cgi?id=1459441){:target="_blank"}
